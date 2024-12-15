@@ -1,3 +1,28 @@
+/* MAIN */
+
+/* MODO MÓVIL */
+@media (max-width: 952px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+
+    }
+
+    .nav-botones {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+        margin-left: -3%;
+    }
+
+    .nav-botones .btn {
+        width: 100%;
+        margin: 5px -7px;
+    }
+}
+
+/* NAV BAR */
 header {
     background-color: #111827;
     width: 100%;
@@ -5,7 +30,7 @@ header {
 
 .navbar {
     max-width: 1400px;
-    margin: 0 auto;
+    margin: 10px auto;
     display: flex;
     align-items: center;
 }
@@ -40,13 +65,13 @@ header {
     font-weight: 500;
     border-radius: 20px;
     padding: 8px 16px;
-    background-color: #0891B2;
+    background-color: #077f9d;
     transition: all 0.3s ease;
 }
 
 .nav-botones .btn:hover {
     color: #FFFFFF;
-    background-color: #00b2b2;
+    background-color: #0891b2;
     transform: scale(1.1);
 }
 
@@ -59,23 +84,110 @@ header {
     transform: scale(1.1);
 }
 
-@media (max-width: 952px) {
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
+/* MAIN-BIENVENIDO */
+.bienvenido {
+    justify-self: center;
+    width: 100%;
+    max-width: 1400px;
+    margin: 20px;
+    text-align: center;
+    color: #fff;
+    padding: 5rem 1rem;
+    background: linear-gradient(to right, #1f2937, #111827);
+    border-radius: 1.5rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    margin-bottom: 3rem;
+}
 
+.bienvenido h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    background: linear-gradient(to right, #00c8ff 10%, #9E5F9E 60%);
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 1rem;
+}
+
+.bienvenido h2 {
+    font-size: 1.5rem;
+    color: #76e4f7;
+    margin-bottom: 2rem;
+}
+
+.bienvenido p {
+    font-size: 1.25rem;
+    color: #d1d5db;
+    margin-bottom: 3rem;
+}
+
+.bienvenido a.btn {
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+    color: #fff;
+    background: linear-gradient(to right, #00c6ff, #be185d);
+    border: none;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.bienvenido a.btn:hover {
+    background: linear-gradient(to right, #0891b2, #be185d);
+    transform: scale(1.05);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* GENIMG - DISGRAFICO - PROLENGUAJE - COMPLETO */
+.trabajando {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background: linear-gradient(to right, #00c8ff, #ff00b7);
+    position: relative;
+    overflow: hidden;
+}
+
+.mensaje {
+    position: relative;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px 40px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.puntos {
+    display: inline-block;
+    animation: blink 1.5s infinite;
+    animation-delay: calc(0.5s * var(--i));
+}
+
+.puntos:nth-child(1) {
+    --i: 1;
+}
+
+.puntos:nth-child(2) {
+    --i: 2;
+}
+
+.puntos:nth-child(3) {
+    --i: 3;
+}
+
+@keyframes blink {
+
+    0%,
+    20% {
+        opacity: 0;
     }
 
-    .nav-botones {
-        flex-direction: column;
-        width: 100%;
-        margin-top: 10px;
-        margin-left: -3%;
-    }
-
-    .nav-botones .btn {
-        width: 100%;
-        margin: 5px 0px;
+    50%,
+    100% {
+        opacity: 1;
     }
 }
