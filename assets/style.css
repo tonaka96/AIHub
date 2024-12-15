@@ -61,5 +61,20 @@ header {
   @media (max-width: 952px) {
     .navbar {
         flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        
     }
-  }
+
+    .nav-botones {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+        margin-left: -3%;
+    }
+
+    .nav-botones .btn {
+        width: 100%;
+        margin: 5px 0px;
+    }
+}
