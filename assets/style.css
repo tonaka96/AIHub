@@ -145,8 +145,8 @@ header {
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
+/* MAIN-SUBAPARTADO */
 .subapartado {
-    background-color: #BE185D;
     justify-self: center;
     width: 100%;
     max-width: 1400px;
@@ -175,23 +175,7 @@ header {
     transform: scale(1.03);
 }
 
-.aprende {
-    background-color: #1f2937;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-    border-radius: 1rem;
-    padding: 25px;
-
-}
-
-.implementa {
-    background-color: #1f2937;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-    border-radius: 1rem;
-    padding: 25px;
-
-}
-
-.conecta {
+.aprende,.implementa, .conecta {
     background-color: #1f2937;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     border-radius: 1rem;
