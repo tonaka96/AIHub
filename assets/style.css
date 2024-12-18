@@ -144,6 +144,7 @@ header {
 }
 
 .subapartado {
+    background-color: #BE185D;
     justify-self: center;
     width: 100%;
     max-width: 1400px;
@@ -152,6 +153,7 @@ header {
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     grid-gap: 30px;
     height: 100%;
+    padding: 5rem 1rem;
 }
 
 .subapartado h1 {
@@ -176,7 +178,7 @@ header {
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     border-radius: 1rem;
     padding: 25px;
-    margin: 20px;
+
 }
 
 .implementa {
@@ -184,7 +186,7 @@ header {
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     border-radius: 1rem;
     padding: 25px;
-    margin: 20px;
+
 }
 
 .conecta {
@@ -192,7 +194,7 @@ header {
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     border-radius: 1rem;
     padding: 25px;
-    margin: 20px;
+
 }
 
 /* genImg - disGrafico - proLenguaje - completo */
