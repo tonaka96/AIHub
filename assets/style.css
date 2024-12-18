@@ -22,6 +22,9 @@
         width: 100%;
         margin: 5px -9.5px;
     }
+    .subapartado {
+        padding: 5rem 1rem;
+    }
 }
 
 /* NAV BAR */
@@ -147,8 +150,8 @@ header {
     justify-self: center;
     width: 100%;
     max-width: 1400px;
-
-
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     grid-gap: 30px;
     height: 100%;
     text-align: center;
